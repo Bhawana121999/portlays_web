@@ -9,6 +9,7 @@ import Link from 'next/link';
 import { toast } from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
 import { MdOutlineRemoveRedEye } from 'react-icons/md';
+import { FaRegEyeSlash } from 'react-icons/fa';
 
 
 export default function page() {
@@ -16,6 +17,7 @@ export default function page() {
     const router = useRouter()
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+    const [showPass, setShowPass] = useState(false)
 
     const validateEmail = (email: string) => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -52,10 +54,10 @@ export default function page() {
         if (password === '') {
             toast.error('Password is required.');
             return;
-        } 
+        }
 
         toast.success('Form submitted successfully!')
-        router.push('/sign-up')
+        router.push('/')
     }
 
     return (
@@ -104,11 +106,20 @@ export default function page() {
                                 id='password'
                                 value={password}
                                 placeholder='Enter Your Password'
-                                type="password"
+                                type={showPass ? 'text' : 'password'}
                                 onChange={(e) => handleChange(e, "password")}
                                 className="py-[1.1rem] px-4 border border-[#DFDFDF] rounded bg-[#fafafa] text-sm font-normal text-paraColor w-full outline-0"
                             />
-                            <MdOutlineRemoveRedEye className="absolute top-1/2 right-4 transform -translate-y-1/2 text-xl text-paraColor" />
+
+                            <button type='button' onClick={() => setShowPass(!showPass)} className='absolute top-1/2 right-4 transform -translate-y-1/2 text-xl text-paraColor'>
+                                {
+                                    showPass ?
+                                        <MdOutlineRemoveRedEye />
+                                        :
+                                        <FaRegEyeSlash />
+                                }
+                            </button>
+
                         </div>
                         <Link href='/forgetPass' className='text-base font-normal text-[#D72626] flex justify-end'>Forgot Password?</Link>
                     </div>

@@ -1,9 +1,16 @@
 import React from 'react'
+import Banner from '../components/Banner'
+import CategorySlider from '../components/CategorySlider'
+import Portfolio from '../components/Portfolio'
 
 export default function page() {
 
   return (
-    
-    <div className='text-3xl text-red-700'>page</div>
+
+    <>
+      <Banner />
+      <CategorySlider />
+      <Portfolio />
+    </>
   )
 }

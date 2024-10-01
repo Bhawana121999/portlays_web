@@ -18,7 +18,7 @@ export default function Header() {
         <>
             <Topbar />
             <nav className="sticky top-0 bg-primaryBgColor w-full z-20">
-                <div className="xl:max-w-[1400px] flex items-center justify-between lg:justify-center xl:mx-auto md:py-6 p-2">
+                <div className="2xl:max-w-[1650px] lg:px-8 2xl:px-4 mx-auto flex items-center justify-between md:py-6 p-2">
                     <a href="/" className="flex items-center relative h-14 w-[204.636px] space-x-3 rtl:space-x-reverse lg:hidden">
                         <Image src={logo} fill priority alt="Logo" />
                     </a>
@@ -42,7 +42,7 @@ export default function Header() {
                             <IoClose className='text-3xl text-white' onClick={() => setNavbarOpen(!navbarOpen)} />
                         </div>
 
-                        <ul className="flex flex-col p-4 lg:p-0 mt-4 rounded-lg lg:flex-row lg:mt-0 gap-4 xl:gap-8 xl:text-base text-[13px] font-normal uppercase">
+                        <ul className="px-[1.875rem] flex flex-col p-4 lg:p-0 mt-4 rounded-lg lg:flex-row lg:mt-0 gap-4 xl:gap-12 xl:text-base text-[13px] font-normal uppercase">
                             <li>
                                 <a href="/" className={`block ${navbarOpen ? 'text-white' : 'text-white'} `} aria-current="page">Home</a>
                             </li>

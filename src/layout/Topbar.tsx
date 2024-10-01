@@ -14,7 +14,7 @@ export default function Topbar() {
     return (
 
         <div className="bg-white py-3">
-        <div className="max-w-[1400px] mx-auto flex flex-row lg:justify-between justify-end items-center px-4">
+        <div className="2xl:max-w-[1650px] lg:px-8 2xl:px-4 mx-auto px-4 flex flex-row lg:justify-between justify-end items-center">
             <a href="/" className="items-center relative h-[4.75rem] w-[230px] space-x-3 rtl:space-x-reverse hidden lg:flex ">
                 <Image src={logo} fill priority alt="Logo" />
             </a>

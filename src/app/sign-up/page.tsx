@@ -60,7 +60,7 @@ export default function Page() {
         }
 
         toast.success('Form submitted successfully!');
-        router.push('/')
+        router.push('/login')
     };
 
 

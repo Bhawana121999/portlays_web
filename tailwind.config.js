@@ -13,8 +13,10 @@ module.exports = {
     extend: {
       fontSize: {
         heading: '28px',
+        mainHeading: '40px',
       },
       colors: {
+        mainHeadingColor: '#1B1C1E',
         headingColor: '#0F1F1B',
         paraColor: '#767676',
         primaryColor: '#255F8D',
@@ -24,6 +26,7 @@ module.exports = {
         primaryBgColor: '#255F8D',
         secondaryBg: '#EB671E',
       }
+
     },
 
   },
