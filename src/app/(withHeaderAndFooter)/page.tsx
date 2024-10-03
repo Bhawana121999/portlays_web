@@ -1,7 +1,8 @@
 import React from 'react'
 import Banner from '../components/Banner'
 import CategorySlider from '../components/CategorySlider'
-import Portfolio from '../components/Portfolio'
+import AthletePortfolio from '../components/AthletePortfolio'
+import CoachPortfolio from '../components/CoachPortfolio'
 
 export default function page() {
 
@@ -10,7 +11,8 @@ export default function page() {
     <>
       <Banner />
       <CategorySlider />
-      <Portfolio />
+      <AthletePortfolio />
+      <CoachPortfolio />
     </>
   )
 }

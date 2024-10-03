@@ -162,3 +162,16 @@
 .box_shadow {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+
+
+.card_box::before {
+  content: '';
+  position: absolute;
+  top: -0.70rem;
+  left: -0.65rem;
+  width: 320px;
+  height: 100%;
+  border: 4px solid #EB671E;
+  border-radius: 2px;
+  z-index: 0;
+}
