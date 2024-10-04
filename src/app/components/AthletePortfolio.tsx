@@ -72,7 +72,7 @@ export default function AthletePortfolio() {
     return (
 
         <>
-            <div className="2xl:max-w-[1650px] lg:px-8 2xl:px-4 mx-auto px-4 py-[60px]">
+            <div className="2xl:max-w-[1650px] lg:px-8 2xl:px-4 mx-auto px-4 py-[60px] dot_bg">
                 <div className="text-center relative mb-12">
                     <h2 className='text-mainHeading font-bold text-mainHeadingColor mb-2'>Portlays Athlete Portfolio</h2>
                     <div className="flex flex-col items-center">

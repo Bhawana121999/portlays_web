@@ -223,3 +223,47 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+
+
+.gradient_bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 31.8%, rgba(0, 0, 0, 0.8) 72.5%);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.dot_bg {
+  position: relative;
+}
+
+.dot_bg:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('/dot1.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 400px;
+  z-index: -1;
+}
+
+.dot_bg:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-image: url('/dot1.webp');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 400px;
+  z-index: -1;
+  transform: rotate(180deg);
+}
