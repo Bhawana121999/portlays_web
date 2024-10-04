@@ -175,3 +175,51 @@
   border-radius: 2px;
   z-index: 0;
 }
+
+
+.sports_card:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-image: url('/sports_bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 160px;
+  height: 200px;
+  z-index: 3;
+}
+
+.sports_card:after {
+  content: '';
+  position: absolute;
+  background-image: url('/sports_bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 160px;
+  height: 200px;
+  z-index: 3;
+  bottom: 0rem;
+  left: 0;
+  transform: rotate(180deg);
+}
+
+
+.sports_CenterSlider .swiper-pagination-bullets.swiper-pagination-horizontal {
+  margin-bottom: 1.5rem;
+}
+
+.sports_CenterSlider .swiper-pagination-bullet-active {
+  background-color: #EB671E !important;
+}
+
+.sports_CenterSlider .swiper-pagination-bullet {
+  background-color: #dfdfdf;
+  opacity: 1 !important;
+}
+
+.sports_bgimg {
+  background-image: url('/sports_bg2.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}

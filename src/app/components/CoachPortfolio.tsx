@@ -74,8 +74,8 @@ export default function CoachPortfolio() {
                                     <div className="col-span-1 bg-[#d4e0ef] rounded-tl-[10px]"></div>
                                     <div className="col-span-1 bg-[#fafafa] rounded-tr-[10px]"></div>
 
-                                    <div className="absolute bottom-[-4.75rem] right-[1.75rem] card_box">
-                                        <div className="bg-white w-[300px] h-[360px] relative z-10">
+                                    <div className="absolute bottom-[-5.75rem] right-[1.75rem] card_box">
+                                        <div className="bg-white w-[300px] h-[380px] relative z-10">
                                             <div className="w-full h-[320px] relative ">
                                                 <Image src={el?.image} alt='' fill className='object-contain' />
                                             </div>
