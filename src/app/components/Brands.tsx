@@ -15,16 +15,16 @@ export default function Brands() {
                     <h2 className='text-mainHeading font-bold text-mainHeadingColor mb-2'>Brands</h2>
                     <p className='text-2xl font-medium text-paraColor'>Discover top sports gear manufacturers and connect with brands to explore their latest offerings and innovations</p>
 
-                    <ul className="flex flex-col mt-8">
+                    <ul className="flex flex-col mt-8 mb-14">
                         <li className='flex flex-row items-center gap-3 text-2xl font-medium text-mainHeadingColor'><IoCheckmarkCircleOutline className='text-2xl text-[#1AA652]' /> Boost brand’s presence to a dedicated sports audience</li>
                         <li className='flex flex-row items-center gap-3 text-2xl font-medium text-mainHeadingColor'><IoCheckmarkCircleOutline className='text-2xl text-[#1AA652]' /> Connect with sports enthusiasts and industry leaders</li>
                         <li className='flex flex-row items-center gap-3 text-2xl font-medium text-mainHeadingColor'><IoCheckmarkCircleOutline className='text-2xl text-[#1AA652]' /> Highlight brand’s unique identity and values</li>
                     </ul>
 
-                    <Link href='#' className='text-xl font-medium text-white bg-secondaryBg rounded-full py-4 px-6 mt-10'>Explore Brands</Link>
+                    <Link href='#' className='text-xl font-medium text-white bg-secondaryBg rounded-full py-4 px-6'>Explore Brands</Link>
                 </div>
                 <div className="col-span-2">
-                    <div className="w-full h-[480px] relative rounded">
+                    <div className="w-full h-[430px] relative rounded">
                         <Image src={brands} alt='' fill className='rounded object-contain' />
                     </div>
                 </div>
